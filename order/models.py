@@ -71,7 +71,7 @@ class OrderTransactionManager(models.Manager):
         try:
             tranasction.save()
         except Exception as e:
-            print("save error",e)
+            print("save error", e)
         return tranasction.merchant_order_id
 
     def get_transaction(self, merchant_order_id):

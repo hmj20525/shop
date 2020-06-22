@@ -36,7 +36,7 @@ def payments_prepare(order_id, amount, *args, **kwargs):
         raise ValueError("토큰 오류")
 
 
-def find_transaction(order_id,*args,**kwargs):
+def find_transaction(order_id, *args, **kwargs):
     # 결제 완료를 확인해주는 함수 - 실 결제 정보를 iamport에서 가져옴
     access_token = get_token()
     if access_token:
